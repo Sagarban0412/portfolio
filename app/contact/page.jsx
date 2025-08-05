@@ -30,7 +30,7 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <h3 className="text-white font-semibold mb-2">Email</h3>
-                <p className="text-gray-400">sagar.ban@example.com</p>
+                <p className="text-gray-400">sagarban2021@gmail.com</p>
               </div>
 
               <div className="bg-gray-800 p-8 rounded-xl">
@@ -40,7 +40,7 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <h3 className="text-white font-semibold mb-2">Phone</h3>
-                <p className="text-gray-400">+1 (555) 123-4567</p>
+                <p className="text-gray-400">+977 9806078239</p>
               </div>
 
               <div className="bg-gray-800 p-8 rounded-xl">
@@ -51,7 +51,7 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <h3 className="text-white font-semibold mb-2">Location</h3>
-                <p className="text-gray-400">San Francisco, CA</p>
+                <p className="text-gray-400">Bhadrapur,jhapa</p>
               </div>
             </div>
 
