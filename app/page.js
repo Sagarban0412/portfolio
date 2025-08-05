@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -25,7 +26,7 @@ const page = () => {
             <div className="flex-1 text-center lg:text-left">
               <div className="mb-6">
                 <h1 className="text-5xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-                  Hello! I'm{" "}
+                  Hello! I&apos;m{" "}
                   <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
                     Sagar Ban
                   </span>
@@ -35,7 +36,7 @@ const page = () => {
                 </p>
                 <p className="text-lg text-gray-400 max-w-2xl">
                   Passionate about creating beautiful, functional, and user-friendly web experiences
-                  that make a difference in people's lives.
+                  that make a difference in people&apos;s lives.
                 </p>
               </div>
 
@@ -92,7 +93,7 @@ const page = () => {
               <div className="relative">
                 <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden p-1 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-pulse">
                   <div className="w-full h-full rounded-full overflow-hidden bg-gray-800">
-                    <img
+                    <Image
                       src="/img.png"
                       alt="Sagar Ban - Web Developer"
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
@@ -161,9 +162,9 @@ const page = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-white mb-8">About Me</h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              I'm a passionate full-stack web developer with a love for creating innovative digital solutions.
+              I&apos;m a passionate full-stack web developer with a love for creating innovative digital solutions.
               With expertise in modern web technologies, I enjoy turning complex problems into simple,
-              beautiful, and intuitive designs. When I'm not coding, you can find me exploring new technologies,
+              beautiful, and intuitive designs. When I&apos;m not coding, you can find me exploring new technologies,
               contributing to open-source projects, or sharing knowledge with the developer community.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -187,4 +188,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
