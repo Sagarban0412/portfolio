@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ProjectsPage = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -14,8 +15,9 @@ const ProjectsPage = () => {
     {
       id: 1,
       title: "Movies Hub",
-      description: "A Movies search website that allows users to search for movies and TV shows, view details, and add them to their watchlist.",
-      image: "/image.png",
+      description:
+        "A Movies search website that allows users to search for movies and TV shows, view details, and add them to their watchlist.",
+      image: "/image.jpg",
       technologies: ["React", "TMDB API"],
       category: "Frontend",
       liveUrl: "https://moviedetailer.vercel.app/",
@@ -25,8 +27,9 @@ const ProjectsPage = () => {
     {
       id: 2,
       title: "urlshortner",
-      description: " A url shortner website that allows users to shorten their long urls.",
-      image: "/api/placeholder/400/250",
+      description:
+        " A url shortner website that allows users to shorten their long urls.",
+      image: "/image.jpg",
       technologies: ["Node js,Express, MongoDB"],
       category: "Full Stack",
       liveUrl: "#",
@@ -36,8 +39,9 @@ const ProjectsPage = () => {
     {
       id: 3,
       title: "Recipe Finder",
-      description: "A recipe finder website that allows users to search for recipes, view details, with cooking steps.",
-      image: "/api/placeholder/400/250",
+      description:
+        "A recipe finder website that allows users to search for recipes, view details, with cooking steps.",
+      image: "./image.jpg",
       technologies: ["React", "API Integration"],
       category: "Frontend",
       liveUrl: "https://tastybytes-pi.vercel.app/",
@@ -47,8 +51,9 @@ const ProjectsPage = () => {
     {
       id: 4,
       title: "Blog CMS",
-      description: "A content management system for bloggers with rich text editor, SEO optimization, and social media integration.",
-      image: "/api/placeholder/400/250",
+      description:
+        "A content management system for bloggers with rich text editor, SEO optimization, and social media integration.",
+      image: "./image.jpg",
       technologies: ["Next.js", "Prisma", "PostgreSQL"],
       category: "Full Stack",
       liveUrl: "#",
@@ -58,8 +63,9 @@ const ProjectsPage = () => {
     {
       id: 5,
       title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.",
-      image: "/api/placeholder/400/250",
+      description:
+        "A modern, responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.",
+      image: "./image.jpg",
       technologies: ["Next.js", "Tailwind CSS"],
       category: "Frontend",
       liveUrl: "#",
@@ -69,8 +75,9 @@ const ProjectsPage = () => {
     {
       id: 6,
       title: "REST API Service",
-      description: "A scalable REST API with authentication, rate limiting, and comprehensive documentation for a social media platform.",
-      image: "/api/placeholder/400/250",
+      description:
+        "A scalable REST API with authentication, rate limiting, and comprehensive documentation for a social media platform.",
+      image: "./image.jpg",
       technologies: ["Node.js", "Express", "MongoDB", "JWT"],
       category: "Backend",
       liveUrl: "#",
@@ -81,11 +88,12 @@ const ProjectsPage = () => {
 
   const categories = ["All", "Full Stack", "Frontend", "Backend"];
 
-  const filteredProjects = activeFilter === "All"
-    ? projects
-    : projects.filter(project => project.category === activeFilter);
+  const filteredProjects =
+    activeFilter === "All"
+      ? projects
+      : projects.filter((project) => project.category === activeFilter);
 
-  const featuredProjects = projects.filter(project => project.featured);
+  const featuredProjects = projects.filter((project) => project.featured);
 
   return (
     <div className="bg-gray-900 min-h-screen text-white pt-20">
@@ -94,20 +102,28 @@ const ProjectsPage = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              My <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">Projects</span>
+              My{" "}
+              <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                Projects
+              </span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Explore my portfolio of web applications, from full-stack solutions to creative frontend experiences.
-              Each project represents a unique challenge and learning opportunity.
+              Explore my portfolio of web applications, from full-stack
+              solutions to creative frontend experiences. Each project
+              represents a unique challenge and learning opportunity.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full">
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-sm text-gray-300">{projects.length} Projects Completed</span>
+                <span className="text-sm text-gray-300">
+                  {projects.length} Projects Completed
+                </span>
               </div>
               <div className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full">
                 <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
-                <span className="text-sm text-gray-300">{featuredProjects.length} Featured Projects</span>
+                <span className="text-sm text-gray-300">
+                  {featuredProjects.length} Featured Projects
+                </span>
               </div>
             </div>
           </div>
@@ -118,9 +134,12 @@ const ProjectsPage = () => {
       <section className="py-20 bg-gray-800">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Featured Projects
+            </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Highlighting some of my most impactful and technically challenging projects
+              Highlighting some of my most impactful and technically challenging
+              projects
             </p>
           </div>
 
@@ -133,16 +152,22 @@ const ProjectsPage = () => {
               >
                 <div className="relative overflow-hidden">
                   <div className="w-full h-64 bg-gray-800 overflow-hidden">
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
+                      width={500} 
+                      height={300} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
+                        e.target.style.display = "none";
+                        e.target.nextSibling.style.display = "flex";
                       }}
                     />
-                    <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-lg font-semibold" style={{display: 'none'}}>
+
+                    <div
+                      className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-lg font-semibold"
+                      style={{ display: "none" }}
+                    >
                       {project.title}
                     </div>
                   </div>
@@ -236,11 +261,14 @@ const ProjectsPage = () => {
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
+                        e.target.style.display = "none";
+                        e.target.nextSibling.style.display = "flex";
                       }}
                     />
-                    <div className="w-full h-full bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center text-gray-400 text-sm" style={{display: 'none'}}>
+                    <div
+                      className="w-full h-full bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center text-gray-400 text-sm"
+                      style={{ display: "none" }}
+                    >
                       {project.title}
                     </div>
                   </div>
@@ -306,8 +334,12 @@ const ProjectsPage = () => {
           {filteredProjects.length === 0 && (
             <div className="text-center py-16">
               <div className="text-gray-500 text-6xl mb-4">🔍</div>
-              <h3 className="text-2xl font-bold text-gray-400 mb-2">No projects found</h3>
-              <p className="text-gray-500">Try selecting a different category filter.</p>
+              <h3 className="text-2xl font-bold text-gray-400 mb-2">
+                No projects found
+              </h3>
+              <p className="text-gray-500">
+                Try selecting a different category filter.
+              </p>
             </div>
           )}
         </div>
@@ -320,8 +352,8 @@ const ProjectsPage = () => {
             Let's Work Together
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Have a project in mind? I'd love to help bring your ideas to life with clean,
-            efficient, and scalable web solutions.
+            Have a project in mind? I'd love to help bring your ideas to life
+            with clean, efficient, and scalable web solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
