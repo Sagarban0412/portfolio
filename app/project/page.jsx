@@ -74,14 +74,14 @@ const ProjectsPage = () => {
     },
     {
       id: 6,
-      title: "REST API Service",
+      title: "E-commerce",
       description:
-        "A scalable REST API with authentication, rate limiting, and comprehensive documentation for a social media platform.",
-      image: "./image.jpg",
+        "A full-stack eCommerce website built with the MERN stack, featuring product listings, detailed pages, shopping cart, and a favorites system. Designed with Tailwind CSS and Framer Motion for a modern, responsive, and seamless shopping experience",
+      image: "/image.jpg",
       technologies: ["Node.js", "Express", "MongoDB", "JWT"],
       category: "Backend",
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Sagarban0412/e-commerce",
       featured: false,
     },
   ];
